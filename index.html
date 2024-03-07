@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Mitr&display=swap" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+  
+  <title>Document</title>
+</head>
+<body>
+  <!-- Scroll To Top Button -->
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <script>
+    // Get the button:
+    let mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() 
+    {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) 
+      {
+       mybutton.style.display = "block";
+      } 
+      else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0; // For Safari
+      document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    }
+  </script>
+
+  <!-- navigate -->
+  <ul>
+    <li><a href="#about">ABOUT ME</a></li>
+    <li><a href="#artgallery">ART GALLERY</a></li>
+    <li><a href="#certificate">CERTIFICATE</a></li>
+    <li style="float:right"><a href="#contact-card">CONTACT</a></li>
+  </ul>
+
+  
+
+ <!--header-->
+  <div id="header">
+    <div id="about">
+    <h1 id="Hello">Hello everyone!</h1>
+    <p id="welcome"> ------------  Welcome to my portfolio  ------------</p>
+    <br>
+    <br>
+    <h4>when nothing goes right ..... go left</h4>
+    </div>
+  </div>
+
+  <!-- profile card-->
+  
+    <div class="pic-button">
+      <img id="profile" src="image/profile.jpg" alt="profile" ALIGN = "LEFT">
+      <h2>About Me</h2>
+      <ui id="card" style="list-style-type: circle;">
+        <li> Full name : Pariyakorn Saelao</li><br>
+        <li> Nick name : Carrot</li><br>
+        <li> Age : 18 Years old</li><br>
+        <li> Birthday : 28 July 2005</li><br>
+        <li> Nationality : Thai</li><br>
+        <li> Graduation : Hatyaiwittayalai school</li><br>
+          
+      </ui>
+    </div>
+  
+  <!-- art -->
+  <div id="artgallery">
+    <div class="header">
+      <h2>ART GALLERY</h2>
+      <h4>นี่จะเป็นผลงานที่ผ่านมาทั้ง digital art และ traditional art ค่ะ ตอนนี้ยังไม่เจอลายเส้นที่เป็นเอกลักษณ์ของตัวเอง <br> 
+        เลยทำให้งานทั้งหมดนี้มีลายเส้นที่แตกต่างกัน มาจากการลองเทคนิคต่างๆ สามารถดูผลงานเพิ่มเติมได้ที่ IG:witchery_z<br>
+        
+      </h4>
+    </div>
+  </div>
+  
+  
+  <!-- art gallery -->
+  
+    <div class="row"> 
+      <div class="column">
+        <img src="image/Art2.png" style="width:100%">
+        <img src="image/art3.png" style="width:100%">
+        <img src="image/art4.jpg" style="width:100%">
+        
+        <img src="image/art13.png" style="width:100%">
+        
+      </div>
+      <div class="column">
+        <img src="image/art8.jpg" style="width:100%">
+        <img src="image/art9.jpg" style="width:100%">
+        <img src="image/art14.png" style="width:100%">
+        
+
+        
+      </div>
+      <div class="column">
+        <img src="image/art5.jpg" style="width:100%">
+        <img src="image/art6.jpg" style="width:100%">
+        <img src="image/art7.jpg" style="width:100%">
+        <img src="image/art15.png" style="width:100%">
+        
+      </div>  
+      
+      <div class="column">
+        <img src="image/art10.png" style="width:100%">
+        <img src="image/art11.png" style="width:100%">
+        <img src="image/art12.png" style="width:100%">
+        <img src="image/art16.png" style="width:100%">
+        
+      </div>
+    </div>
+
+    <!-- certificate -->
+  <div class="certificate">
+    <div id="certificate">
+    <h2> CERTIFICATE </h2>
+    <h4> เกียรติบัตรบางส่วนจากการเข้าร่วมกิจกรรมและแข่งขันในช่วงปี พ.ศ.2565-2567<br>
+    สามารถเลื่อนดูได้จาก Horizontal Scroll ด้านล่างภาพค่ะ</h4>
+  </div> 
+    <div class="scroll-container">
+      <img src="image/cer1-itcamp.jpg" alt="cer1-itcamp" style="height: 500px;">
+      <img src="image/cer2-tobeit.png" alt="cer2-tobeit" style="height: 500px;">
+      <img src="image/cer3-ppt.jpg" alt="cer3-ppt" style="height: 500px;">
+      <img src="image/cer4-arit.jpg" alt="cer4-arit" style="height: 500px;">
+      <img src="image/cer5-design.png" alt="cer5-design" style="height: 500px;">
+      <img src="image/cer7-3d.jpg" alt="cer7-3d" style="height: 500px;">
+      <img src="image/cer8-gamedev.jpg" alt="cer8-gamedev" style="height: 500px;">
+      <img src="image/cer9-art.jpg" alt="cer9-art" style="height: 500px;">
+      <img src="image/cer10-art.jpg" alt="cer10-art" style="height: 500px;">
+      <img src="image/cer11-other.png" alt="cer11-other" style="height: 500px;">
+      <img src="image/cer12-market.jpg" alt="cer12-market" style="height: 500px;">
+      <img src="image/cer13-market.jpg" alt="cer13-market" style="height: 500px;">
+      <img src="image/cer14-other.jpg" alt="cer14-other" style="height: 500px;">
+      <img src="image/cer15-other.png" alt="cer15-other" style="height: 500px;">
+    </div>
+  </div>
+
+
+
+<!--social btn-->
+
+<div class="contact-card">
+  
+  <div class="profile-picture" id="contact-card">
+      <img src="image/profile2.jpg" alt="Profile Picture">
+  </div>
+  <div class="info">
+      <h2>CONTACT</h2>
+      <p><strong>Name:</strong> Pariyakorn saelao (carrot)</p>
+      <p><strong>Facebook:</strong> <a href="https://www.facebook.com/profile.php?id=100015621491918" target="_blank">Pariyakorn Saelao</a></p>
+      <p><strong>Instagram:</strong> <a href="https://www.instagram.com/carrothatenoodle/" target="_blank">carrothatenoodle</a></p>
+      <p><strong>Phone:</strong> 064-0761119</p>
+  </div>
+</div>
+  
+
+  
+
+
+
+    
+  
+  
+  
+  
+
+   
